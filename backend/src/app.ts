@@ -27,7 +27,7 @@ app.use(
     },
     cors({ origin: '*' })
 )
-app.use(express.static(path.join(__dirname, '../frontend')));
+app.use(express.static(path.join(__dirname, '../../frontend')));
 app.get('/', (req, res) => {
     return res.render("/index.html")
 })
