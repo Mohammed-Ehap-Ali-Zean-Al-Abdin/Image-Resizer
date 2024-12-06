@@ -1,0 +1,49 @@
+{
+    "name": "final-project-level-4",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/index.js",
+        "build":"tsc",
+        "dev": "nodemon --exec npx ts-node  src/index.ts",
+        "prettier-watch": "onchange \"**/*\" -- prettier --write --ignore-unknown {{changed}}",
+        "test": "jest",
+        "lint": "eslint",
+        "format": "prettier  --write \"**/*.+(js|ts|json)\""
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.8.0",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^4.17.21",
+        "@types/jest": "^29.5.12",
+        "@types/multer": "^1.4.11",
+        "@types/sharp": "^0.31.1",
+        "@types/supertest": "^6.0.2",
+        "@typescript-eslint/eslint-plugin": "^8.0.0",
+        "@typescript-eslint/parser": "^8.0.0",
+        "eslint": "^9.8.0",
+        "globals": "^15.8.0",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.4",
+        "prettier": "^3.3.3",
+        "supertest": "^7.0.0",
+        "ts-jest": "^29.2.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.3",
+        "typescript-eslint": "^7.18.0"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.19.2",
+        "glob": "^11.0.0",
+        "multer": "^1.4.5-lts.1",
+        "sharp": "^0.33.4"
+    },
+    "description": "",
+    "overrides": {
+        "eslint": "^9.8.0"
+    }
+}

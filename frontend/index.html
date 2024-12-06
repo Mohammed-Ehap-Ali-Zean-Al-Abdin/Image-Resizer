@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Resizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Image Resizer</header>
+    <nav>
+      <ul>
+        <li id="upload">upload</li>
+      </ul>
+    </nav>
+    <section>
+      <div id="imagesGallery"></div>
+    </section>
+    <section>  
+      <form class="form file-form hidden" id="resizeImgForm">
+        <h4>Resize Image</h4>
+        <div>
+          <img src="#" alt="selected img" id="selectedImg" />
+        </div>
+        <!-- single row -->
+        <div class="form-row">
+          <label for="format" class="form-label">Format</label>
+          <input type="text" required id="format" class="form-input" />
+        </div>
+        <!-- end of single row -->
+        <!-- single row -->
+        <div class="form-row">
+          <label for="height" class="form-label">Height</label>
+          <input type="number" min="1" required id="height" class="form-input" />
+        </div>
+        <!-- end of single row -->
+        <!-- single row -->
+        <div class="form-row">
+          <label for="width" class="form-label">Width</label>
+          <input type="number" required  min="1" id="width" class="form-input" />
+        </div>
+        <!-- end of single row -->
+
+        <button type="submit" class="btn btn-block">Resize Image</button>
+      </form>
+      <div id="optionsToAccessImages" class="hidden">
+        <div id="download">
+          <a id="downloadLink" download href="#">
+            <button type="button">Download!</button>
+          </a>
+        </div>
+        <div id="shareableLink">
+          <!-- The text field -->
+          <div class="form-row">
+            <label for="linkText" class="form-label">Link</label>
+            <input type="text" id="linkText" class="form-input" />
+          </div>
+          <!-- The button used to copy the text -->
+          <button type="button" onclick="copyLink()">Copy Link</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <form class="form file-form hidden" id="uploadImgForm">
+        <h4>File Upload</h4>
+        <!-- single row -->
+        <div class="form-row">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" required id="name" class="form-input" />
+        </div>
+        <!-- end of single row -->
+        <!-- single row -->
+        <div class="form-row">
+          <label for="image" class="form-label">Image</label>
+          <input type="file" required id="image" accept="image/*" />
+        </div>
+        <!-- end of single row -->
+
+        <button type="submit" class="btn btn-block">Upload Image</button>
+      </form>
+    </section>
+    <footer>Mission Passed +Respect</footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

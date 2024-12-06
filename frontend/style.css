@@ -1,0 +1,51 @@
+.hidden{
+    display: none;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.galleryImage{
+    width:800px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+header{
+    font-size: 4ch;
+    margin-left:100px;
+    margin-bottom: 25px;
+}
+
+#upload,h4{
+    font-size: 2.5ch;
+    margin-left: 100px;
+}
+
+.form-row{
+    padding: 15px 20px 5px 400px;
+}
+
+.btn-block{
+    margin-top: 20px;
+    margin-left: 400px;
+    width: 100px;
+    height:25px;
+}
+
+input{
+    width:200px;
+    height: 30px;
+    padding: 5px 5px 5px 150px;
+}
+
+footer{
+    margin:15px 20px 5px 700px;
+}
